@@ -1,0 +1,17 @@
+Fri 19 Aug 2022 12:49:44 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:33:3: error: expected ‘,’ or ‘;’ before ‘return’
+   33 |   return l;
+      |   ^~~~~~
+list.c:32:9: error: unused variable ‘l’ [-Werror=unused-variable]
+   32 |   List *l = (List *)malloc(sizeof(List*))
+      |         ^
+list.c:34:1: error: control reaches end of non-void function [-Werror=return-type]
+   34 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d2458ba
