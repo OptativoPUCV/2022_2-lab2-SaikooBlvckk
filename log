@@ -89,3 +89,18 @@ list.c:43:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 d378271
+Sat 20 Aug 2022 07:59:40 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:10: error: dereferencing ‘void *’ pointer [-Werror]
+   42 |   return *dato;
+      |          ^~~~~
+list.c:42:10: error: void value not ignored as it ought to be
+list.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+   43 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+cea705f
